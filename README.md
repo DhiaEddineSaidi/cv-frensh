@@ -16,7 +16,7 @@ I _knew_ I had to do something about it. And so AltaCV was born.
 
 This is how the re-created résumé looks like ([view/open on Overleaf](https://www.overleaf.com/read/gtqfpbwncfvp)):
 
-<img src="mmayer.png" alt="Marissa Mayer's résumé, re-created with AltaCV" width="600px">
+<img src="dhia_eddine_saidi.png" alt="Dhia Eddine Saidi résumé, re-created with AltaCV" width="600px">
 
 Though if you're creating your own CV/résumé, you'd probably prefer using the basic template ([view/open on Overleaf](https://www.overleaf.com/read/trgqjpwnmtgv)):
 
