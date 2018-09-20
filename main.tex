@@ -1,0 +1,197 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.4, 27 July 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options.
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{ef8b1b}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+%% For url links 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+\urlstyle{same}
+
+
+\begin{document}
+\name{Dhia Eddine Saidi} 
+\tagline{Ingénieur Informatique \& Geek fier}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+\photo{2.5cm}{dhia_eddine_saidi}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{dhiasaidi.ensit@gmail.com}
+  \phone{(+216) 22 535 657}
+  \mailaddress{BP 277 bureau de poste EL MANAR 2, Tunis-2092}
+  \location{Tunis, TN}
+  \linkedin{linkedin.com/in/dhia-eddine-saidi-5a77b591/}
+  \github{github.com/DhiaEddineSaidi} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experience}
+
+\cvevent{Software UI/UX Developer}{Vermeg}{sept 2017 -- ongoing}{Tunis, TN}
+\begin{itemize}
+\item Ingénieur front-end innovation au sein du Palmyra Framework
+\item Migration de l'ancien front-end vers les dernières technologies JavaScript (Angular2 +).
+\item Trouver des solutions pour la compatibilité ascendante.
+\item 
+Construire de nouveaux outils pour la génération de code (Yeoman + Ejs), la conception wysiwyg pour les écrans de business, etc...
+\end{itemize}
+\underline{\textbf{Tech:}} Javascript,Nodejs,Typescript,Yeoman,Ejs, Angular,HTML5,CSS3.
+\newline
+\underline{\textbf{Outils:}} VScode,Tslint,Ejslint,Git(Gitlab).
+\newline
+\underline{\textbf{Méthode:}} Scrum, using Jira.
+\divider
+
+\cvevent{Software Developer}{Vermeg}{sept 2016 -- sept 2017}{Tunis, TN}
+\begin{itemize}
+\item Membre de l'équipe PRESENTATION de Palmyra
+\item Ingénieur front-end support au sein du Palmyra Framework
+\item Supporter plus de 600 000 lignes de code Java (GWT) dans plus de 10 versions
+\item Bug Fixing / Enhancement.
+\end{itemize}
+\underline{\textbf{Tech:}} Java/JEE,GWT,Spring.
+\newline
+\underline{\textbf{Outils:}} Eclipse,Sonar,SVN,Jenkins.
+\newline
+\underline{\textbf{Méthode:}} Scrum, using Jira.
+\divider
+
+\cvevent{Java/JEE Developer (PFE)}{Sofrecom}{feb 2016 -- July 2016}{Tunis, TN}
+
+\begin{itemize}
+\item Membre de l'équipe OOPRO.
+
+\item Analyse comparative des frameworks d'automatisation des tests front-enst. 
+\item Concevoir et construire un IDE pour les ingénieurs d'automatisation des tests afin de les aider à écrire, enregistrer et réutiliser les scripts ROBOT-FRAMEWORK.
+\end{itemize}
+\underline{\textbf{Tech:}} Java,JavaEE,Spring,Vaadin Framework , Robot-framework,Selenium.
+\newline
+\underline{\textbf{Outils:}} Eclipse,Jenkins,svn,Docker. 
+\newline
+\underline{\textbf{Méthode:}} Scrum, using Jira.
+% \divider
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+\cvsection{Un jour de mon quotidien}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+% Some ad-hoc tweaking to adjust the labels so that they don't overlap
+\wheelchart{1.5cm}{0.5cm}{%
+  10/10em/accent!30/Sleeping \& rêver de travail,
+  25/9em/accent!60/Discussions chaudes sur l'avenir de Palmyra,
+  25/15em/accent!40/Passer du temps avec la famille et les amis,
+  5/8em/accent!20/\footnotesize Penser à mon avenir,
+  30/9em/accent/Participer à la construction du génie du Palmyra,
+  5/8em/accent!20/regarder la télévision
+}
+
+\clearpage
+
+\cvsection[page2sidebar]{Projets}
+Une bibliothèque basée sur Java Schema Form permet aux développeurs de définir un Schema et un Form
+à l’aide d’annotations sur les champs d’un simple POJO. La bibliothèque SF Java UI est une extension
+côté serveur pour la bibliothèque Json Schema Form. Cela rend votre développement plus facile, vous ne
+vous occuperez pas de la façon de définir votre Schema et la définition de votre formulaire d’écran. Il suffit
+d’annoter vos champs et d’obtenir votre écran.
+Si vous êtes intéressé vous pouvez également contribuer à ce projet.
+\url{https://github.com/JsonSchema-JavaUI/sf-java-ui}
+
+
+\divider
+
+
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}
